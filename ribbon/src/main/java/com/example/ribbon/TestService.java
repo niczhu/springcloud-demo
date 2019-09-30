@@ -10,7 +10,7 @@ public class TestService {
     @Autowired
     RestTemplate restTemplate;
 
-    public String test(String name){
-        return restTemplate.getForObject("http://EUREKA-CLIENT-TEST/test",String.class);
+    public String hi(String name){
+        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
     }
 }

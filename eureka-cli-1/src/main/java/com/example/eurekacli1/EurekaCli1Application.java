@@ -22,7 +22,7 @@ public class EurekaCli1Application {
     private String port;
 
     @GetMapping("hi")
-    public Object cli(@RequestParam String name){
+    public String cli(@RequestParam String name){
         return "hi  test.. name=>"+name +" prot=>"+port;
     }
 
